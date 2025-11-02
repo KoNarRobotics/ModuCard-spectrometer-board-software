@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 void MX_USB_PCD_Init(void);
@@ -66,8 +68,16 @@ void MX_USB_PCD_Init(void);
 #define STATUS_LED_GPIO_Port GPIOE
 #define USR_BUTTON_Pin GPIO_PIN_6
 #define USR_BUTTON_GPIO_Port GPIOE
+#define TCD_OUT_Pin GPIO_PIN_0
+#define TCD_OUT_GPIO_Port GPIOA
+#define TCD_ICG_Pin GPIO_PIN_5
+#define TCD_ICG_GPIO_Port GPIOA
+#define TCD_SH_Pin GPIO_PIN_6
+#define TCD_SH_GPIO_Port GPIOA
 #define IMU_EXT_NRESET_Pin GPIO_PIN_8
 #define IMU_EXT_NRESET_GPIO_Port GPIOE
+#define TCD_MCLK_Pin GPIO_PIN_9
+#define TCD_MCLK_GPIO_Port GPIOE
 #define IMU_FSYNC_Pin GPIO_PIN_11
 #define IMU_FSYNC_GPIO_Port GPIOE
 #define IMU_INT_Pin GPIO_PIN_12

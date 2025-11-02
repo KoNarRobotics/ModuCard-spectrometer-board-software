@@ -4,12 +4,16 @@
 
 #include "main.h"
 
+extern ADC_HandleTypeDef hadc1;
 extern DCACHE_HandleTypeDef hdcache1;
 extern FDCAN_HandleTypeDef hfdcan1;
 extern FDCAN_HandleTypeDef hfdcan2;
 extern HASH_HandleTypeDef hhash;
 extern XSPI_HandleTypeDef hospi1;
 extern RNG_HandleTypeDef hrng;
+extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim2;
+extern TIM_HandleTypeDef htim3;
 extern TIM_HandleTypeDef htim6;
 extern UART_HandleTypeDef huart5;
 extern DMA_NodeTypeDef Node_GPDMA1_Channel1;
